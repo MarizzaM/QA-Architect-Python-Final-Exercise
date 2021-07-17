@@ -3,8 +3,8 @@ class Printer:
         self.model = model
         print(f'A new printer "{model}" has arrived')
 
-    def pages_print(self, thislist):
-        [print(x) for x in thislist]
+    def pages_print(self, *args):
+        [print(x) for x in args]
 
 
 p1 = Printer("HP OfficeJet Pro 9015e")
