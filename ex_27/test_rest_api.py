@@ -17,7 +17,7 @@ class RestObject:
         return result
 
 
-def test_rest_api_get_coupon():
+def test_rest_api_get_product():
     resp = requests.get("http://127.0.0.1:5000/product/1")
     d = json.loads(resp.content)
     t = RestObject(d)
